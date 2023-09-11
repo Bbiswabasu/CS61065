@@ -1,0 +1,8 @@
+Public address of the key:   0x68aa8bF9420a0101aDC85D66BDf142AAfCf80F75
+Path of the secret key file: /Users/bbiswabasuroy/Library/Ethereum/keystore/UTC--2023-09-08T13-12-40.924367000Z--68aa8bf9420a0101adc85d66bdf142aafcf80f75
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
