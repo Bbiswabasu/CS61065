@@ -1,7 +1,7 @@
 const Web3 = require("web3");
 const fs = require("fs");
 
-const abi = JSON.parse(fs.readFileSync("contract2_sol_TicketBooking.abi"));
+const abi = JSON.parse(fs.readFileSync("Part_c_sol_TicketBooking.abi"));
 
 async function main() {
   const web3 = new Web3.Web3(
@@ -16,12 +16,12 @@ async function main() {
   web3.eth.accounts.wallet.add(signer);
   const myContract = new web3.eth.Contract(
     abi,
-    "0x737120767523a7c7eda3b87b78feac9798b9493c"
+    "0x1830203bbe81e604413f48de3ce28132e0d2f4f5"
   );
   const tx = {
-    to: "0x737120767523a7c7eda3b87b78feac9798b9493c",
+    to: "0x1830203bbe81e604413f48de3ce28132e0d2f4f5",
     from: signer.address,
-    data: myContract.methods.buyTicket("bbiswabasu", 10).encodeABI(),
+    data: myContract.methods.buyTicket("bbiswabasu", 2).encodeABI(),
     value: "5000",
     gasPrice: "200000000000",
   };
